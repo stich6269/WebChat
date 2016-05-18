@@ -6,7 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var HttpError = require('./error').HttpError;
 
-var routes = require('./routes');
+var routes = require('./routes/index');
+var users = require('./routes/users');
 var app = express();
 
 // view engine setup
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Directions of requests
 app.use('/', routes);
+app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
