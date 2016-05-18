@@ -1,5 +1,4 @@
-doctype html
-html(lang='eng')
-    h1= message
-    h2= error.status
-    pre= error.stack
+include layout/page.pug
+    p Sorry, we have some error
+    p= error.message
+
