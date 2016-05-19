@@ -14,7 +14,8 @@
     "pug": "^2.0.0-alpha7",
     "serve-favicon": "~2.3.0",
     "mongodb": "~2.1.19",
-    "mongoose": "~4.4.17",
-    "asynk" : "*"
+    "mongoose": "~2.0.0",
+    "express-session":"~1.13.0",
+    "connect-mongo":"~1.2.0"
   }
 }

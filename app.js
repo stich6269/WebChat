@@ -5,6 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var HttpError = require('./error').HttpError;
+var session = require('express-session');
+var mongoose = require('./libs/mongodb');
+var MogoStore = require('connect-mongo')(session);
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -21,6 +24,25 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+//User session
+
+app.use(session({
+    secret: 'KillersIsJim',
+    key: 'sid',
+    cookie: {
+        path: "/",
+        httpOnly: true,
+        maxAge: null
+    },
+    store: new MogoStore({mongooseConnection: mongoose.connection})
+}));
+
+app.use(function (req, res, next) {
+    req.session.numberOfVisits = req.session.numberOfVisits + 1 || 1;
+    res.end("Visits: " + req.session.numberOfVisits);
+});
+
 
 //Directions of requests
 app.use('/', routes);
