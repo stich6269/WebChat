@@ -2,5 +2,12 @@ nav.navbar.navbar-default(role='navigation')
     ul.nav.navbar-nav
         li
             a(href='/') Home
+        if user
+            li
+                a(href="/chat") Chat
+
         li
-            a(href='/login') Login
+            if user
+                a(href='', onclick="$('<form method=Post action=/logout>').submit(); return false;") Logout
+            else
+                a(href='/login') Login

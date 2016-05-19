@@ -1,0 +1,19 @@
+include layout/page.pug
+script
+    include ../public/js/login.js
+section.container
+    p Please Type your user name and password. If this user name is not exist, it will be created.
+    form.form-horizontal.login-form(name='login-form')
+        .form-group
+            label.col-lg-2.control-label(for='input-username') Name
+            .col-lg-1
+                input.form-control(type="text", name="username", value="", id="input-username", placeholder="Name")
+        .form-group
+            label.col-lg-2.control-label(for='input-password') Password
+            .col-lg-1
+                input.form-control(type="password", name="password", value="", id="input-password", placeholder="Password")
+        .form-group
+            .col-lg-offset-2.col-lg-10
+                button.btn.btn-primary(type="submit", data-loading-text='Sending...') Login
+
+include includes/foot.pug

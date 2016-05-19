@@ -7,11 +7,10 @@ var bodyParser = require('body-parser');
 var HttpError = require('./error').HttpError;
 var session = require('express-session');
 var mongoose = require('./libs/mongodb');
-var MogoStore = require('connect-mongo')(session);
+var MongoStore = require('connect-mongo')(session);
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -25,8 +24,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//User session
 
+//User session
 app.use(session({
     secret: 'KillersIsJim',
     key: 'sid',
@@ -35,18 +34,15 @@ app.use(session({
         httpOnly: true,
         maxAge: null
     },
-    store: new MogoStore({mongooseConnection: mongoose.connection})
+    store: new MongoStore({mongooseConnection: mongoose.connection})
 }));
 
-app.use(function (req, res, next) {
-    req.session.numberOfVisits = req.session.numberOfVisits + 1 || 1;
-    res.end("Visits: " + req.session.numberOfVisits);
-});
 
 
-//Directions of requests
-app.use('/', routes);
-app.use('/users', users);
+app.use(require('./middleware/sendHttpError'));
+app.use(require('./middleware/loadUser'));
+require('./routes')(app);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -57,13 +53,17 @@ app.use(function (req, res, next) {
 
 // production error handler
 app.use(function (err, req, res, next) {
-    console.log('prod errors ...');
+    console.log(err);
+
+    if(typeof err.status == 'number'){
+        err = new HttpError(err.status, err.message);
+    }
 
     if(err instanceof HttpError){
-        res.render('error', {error: err, title: 'error'});
+        res.sendHttpError(err);
     }else{
         res.status(err.status || 500);
-        res.json(error);
+        res.json(err);
     }
 });
 
