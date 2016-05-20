@@ -1,4 +1,21 @@
 include layout/page.pug
+
+script
+    include ../public/vendor/bower_components/socket.io-client/socket.io.js
+    include ../public/js/web_socket.js
+
 section.container
-    p.lead Hi #{user.get('username')}
+    p.lead Chat
+    #room
+        ul
+        form
+            input.form-control(
+                autocomplete='off',
+                autofocus,
+                placeholder='Message'
+            )
+
+
+
+
 include includes/foot.pug

@@ -1,3 +1,4 @@
+//Dependencies
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -7,10 +8,9 @@ var bodyParser = require('body-parser');
 var HttpError = require('./error').HttpError;
 var session = require('express-session');
 var mongoose = require('./libs/mongodb');
-var MongoStore = require('connect-mongo')(session);
 
+//Created app
 var app = express();
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,19 +26,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 //User session
+var sessionStore = require('./libs/sessionStore');
+
 app.use(session({
     secret: 'KillersIsJim',
-    key: 'sid',
-    cookie: {
-        path: "/",
-        httpOnly: true,
-        maxAge: null
-    },
-    store: new MongoStore({mongooseConnection: mongoose.connection})
+    name: 'sid',
+    store:  sessionStore,
+    proxy: false,
+    resave: true,
+    saveUninitialized: true
 }));
 
-
-
+//Custom middlevaresand router
 app.use(require('./middleware/sendHttpError'));
 app.use(require('./middleware/loadUser'));
 require('./routes')(app);
@@ -51,7 +50,7 @@ app.use(function (req, res, next) {
     next(err);
 });
 
-// production error handler
+//Error handler
 app.use(function (err, req, res, next) {
     console.log(err);
 
