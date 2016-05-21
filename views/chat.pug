@@ -5,15 +5,21 @@ script
     include ../public/js/web_socket.js
 
 section.container
-    p.lead Chat
-    #room
-        ul
-        form
-            input.form-control(
-                autocomplete='off',
-                autofocus,
-                placeholder='Message'
-            )
+    p.lead Simple WebSocket chat
+    .panel.panel-default.col-xs-8.no-padding
+        .panel-heading Public group
+        .panel-body
+            ul#message-list
+        .panel-footer.white
+            #room
+                form
+                    input.form-control(
+                        autocomplete='off',
+                        autofocus,
+                        placeholder='Message'
+                    )
+    .col-lg-4
+        .list-group
 
 
 

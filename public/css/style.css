@@ -1,8 +1,30 @@
 body {
-  /*padding: 50px;*/
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    /*padding: 50px;*/
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+    color: #00B7FF;
+}
+
+.panel-footer.white {
+    background: white;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.list-group-item:before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    border-radius: 50%;
+    height: 8px;
+    background: #CACACA;
+    margin-right: 5px;
+}
+
+.list-group-item.online:before {
+    background: #01a13b;
 }

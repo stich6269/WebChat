@@ -52,8 +52,7 @@ app.use(function (req, res, next) {
 
 //Error handler
 app.use(function (err, req, res, next) {
-    console.log(err);
-
+    
     if(typeof err.status == 'number'){
         err = new HttpError(err.status, err.message);
     }
