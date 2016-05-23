@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c95f8ff8-b146-415c-baab-c17f84c1989f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/.zuul.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/History.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/lib/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/lib/manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/lib/on.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/lib/socket.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/lib/url.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/socket.io.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/support/browserify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/support/browserify.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/test/connection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/test/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/test/socket.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/test/support/env.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/test/support/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/bower_components/socket.io-client/test/url.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/web_socket.js" afterPath="$PROJECT_DIR$/public/js/web_socket.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/logout.js" afterPath="$PROJECT_DIR$/routes/logout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/socket/index.js" afterPath="$PROJECT_DIR$/socket/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/chat.pug" afterPath="$PROJECT_DIR$/views/chat.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/login.pug" afterPath="$PROJECT_DIR$/views/login.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partial/topNavigation.pug" afterPath="$PROJECT_DIR$/views/partial/topNavigation.pug" />
     </list>
     <ignored path="WebChat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,18 +28,8 @@
           <file leaf-file-name="web_socket.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/js/web_socket.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="665">
-                  <caret line="76" column="73" selection-start-line="76" selection-start-column="73" selection-end-line="76" selection-end-column="73" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="logout.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/logout.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+                <state relative-caret-position="433">
+                  <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -95,8 +52,8 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/socket/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="478">
-                  <caret line="111" column="45" selection-start-line="111" selection-start-column="45" selection-end-line="111" selection-end-column="45" />
+                <state relative-caret-position="790">
+                  <caret line="118" column="2" selection-start-line="118" selection-start-column="2" selection-end-line="118" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -168,8 +125,8 @@
         <option value="$PROJECT_DIR$/views/partial/topNavigation.pug" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/logout.js" />
-        <option value="$PROJECT_DIR$/public/js/web_socket.js" />
         <option value="$PROJECT_DIR$/socket/index.js" />
+        <option value="$PROJECT_DIR$/public/js/web_socket.js" />
       </list>
     </option>
   </component>
@@ -288,6 +245,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebChat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebChat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="socket" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -363,7 +338,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/www.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../upmc-woundcare-ios" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:\Program Files\nodejs\node" />
@@ -470,7 +445,7 @@
       <workItem from="1463478492331" duration="14150000" />
       <workItem from="1463566433387" duration="20105000" />
       <workItem from="1463644856090" duration="17231000" />
-      <workItem from="1463731956669" duration="46597000" />
+      <workItem from="1463731956669" duration="49351000" />
     </task>
     <servers />
   </component>
@@ -507,7 +482,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101910000" />
+    <option name="totallyTimeSpent" value="104664000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,7 +508,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2652174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19891304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -906,6 +881,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/socket/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="118" column="2" selection-start-line="118" selection-start-column="2" selection-end-line="118" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/logout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -916,16 +899,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/web_socket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="76" column="73" selection-start-line="76" selection-start-column="73" selection-end-line="76" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socket/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="111" column="45" selection-start-line="111" selection-start-column="45" selection-end-line="111" selection-end-column="45" />
+        <state relative-caret-position="433">
+          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
           <folding />
         </state>
       </provider>

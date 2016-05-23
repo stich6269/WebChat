@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href = '/';
         });
 
+
     function printMessage(text) {
         ul.append($('<li/>', {text: text}));
     }
@@ -59,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
         $elem.toggleClass('online', status);
     }
 
+    
     function drawUserList(users, rooms) {
         var $list = $('.list-group'),
             online = Object.keys(rooms),
